@@ -40,14 +40,6 @@ public class TC01_RegisterTestCase extends BaseTest {
 	Reporter.log("Register page is displayed",true);
 	
 	RegisterPage  register_page = new RegisterPage(driver);
-		
-	// step5 : Fill all the details
- //   driver.findElement(By.id("gender-female")).click();
-//    driver.findElement(By.id("FirstName")).sendKeys(FirstName);
- //   driver.findElement(By.id("LastName")).sendKeys(LastName);
-//    driver.findElement(By.id("Email")).sendKeys("a"+utility_Methods.getRandomNumber()+Email);
-  //  driver.findElement(By.id("Password")).sendKeys(Password);
- //	  driver.findElement(By.id("ConfirmPassword")).sendKeys("ConfirmPassword");
 	
 	register_page.getFemaleRadioButton().click();
 	register_page.getFirstNameTextField().sendKeys(Firstname);
